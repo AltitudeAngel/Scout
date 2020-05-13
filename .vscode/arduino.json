@@ -1,0 +1,9 @@
+{
+    "programmer": "Arduino as ISP",
+    "board": "arduino:avr:nano",
+    "configuration": "cpu=atmega328",
+    "port": "COM3",
+    "sketch": "firmware\\Scout\\Scout.ino",
+    "output": "firmware\\bin",
+    "debugger": "debugWIRE"
+}

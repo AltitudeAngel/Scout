@@ -1,0 +1,36 @@
+{
+    "configurations": [
+        {
+            "name": "Arduino",
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "intelliSenseMode": "gcc-x64",
+            "defines": [
+                "F_CPU=16000000L",
+                "ARDUINO=10800",
+                "ARDUINO_AVR_NANO",
+                "ARDUINO_ARCH_AVR",
+                "__AVR_ATmega328P__"
+            ],
+            "compilerPath": "${env:ProgramFiles(x86)}\\Arduino\\hardware\\tools\\avr\\bin\\avr-gcc.exe",
+            "browse": {
+                "path": [
+                    "${workspaceRoot}\\**",
+                    "${env:HOMEDRIVE}${env:HOMEPATH}\\Documents\\Arduino\\**",
+                    "${env:ProgramFiles(x86)}\\Arduino\\hardware\\arduino\\avr\\**",
+                    "${env:ProgramFiles(x86)}\\Arduino\\tools\\**"
+                    ]
+            },
+            "includePath": [
+                "${workspaceRoot}\\**",
+                "${env:HOMEDRIVE}${env:HOMEPATH}\\Documents\\Arduino\\**",
+                "${env:ProgramFiles(x86)}\\Arduino\\hardware\\arduino\\avr\\**",
+                "${env:ProgramFiles(x86)}\\Arduino\\tools\\**"
+            ],
+            "forcedInclude": [
+                "${env:ProgramFiles(x86)}\\Arduino\\hardware\\arduino\\avr\\cores\\arduino\\Arduino.h",
+            ]
+        }
+    ],
+    "version": 4
+}

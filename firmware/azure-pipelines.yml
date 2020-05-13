@@ -1,0 +1,43 @@
+trigger:
+  branches:
+    include:
+    - master
+  paths:
+    include:
+    - 'firmware/*'
+    exclude:
+    - 'firmware/doc/'
+    - '*.md'
+
+schedules:
+  - cron: "0 0 * * *"
+    displayName: Daily Build
+    branches:
+      include:
+      - master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: Bash@3
+  displayName: 'Run Build Script'
+  inputs:
+    filePath: '$(Build.SourcesDirectory)/firmware/Build.sh'
+    workingDirectory: '$(Build.SourcesDirectory)/firmware'
+    failOnStderr: true
+
+- task: CopyFiles@2
+  displayName: 'Copy Build Artifacts'
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)/firmware/bin'
+    Contents: '**'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+    CleanTargetFolder: true
+    
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Build Artifacts'
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'

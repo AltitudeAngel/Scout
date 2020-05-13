@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build",
+      "type": "shell",
+      "options": {
+        "cwd": "./firmware"
+      },
+      "command": "./Build.sh",
+      "windows":{
+        "command": "bash ./Build.sh"
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}

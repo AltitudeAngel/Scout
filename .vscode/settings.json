@@ -1,0 +1,4 @@
+{
+  "arduino.logLevel": "info",
+  "arduino.enableUSBDetection": false
+}
