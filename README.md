@@ -77,7 +77,7 @@ The project is currently in release version 0.1, however, we've already set out 
 
 You can help to shape and influence the direction and roadmap for _Scout_, simply by using it, sharing your feedback and ideas with the rest of the contributors and the community.
 
-# License
+# Licence
 
 The Scout firmware is licensed under the [Apache 2.0 licence](https://choosealicense.com/licenses/apache-2.0/#), and the hardware is licensed under [Creative Commons BY-SA](https://creativecommons.org/licenses/by-sa/4.0/).
 

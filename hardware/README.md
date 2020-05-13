@@ -81,7 +81,7 @@ In the current design, battery power comes from an 18650 Lithium Ion battery. Th
 
 In addition to the battery, the power supply circuitry enables safe charging of the battery through a Micro USB connector and charge controller, protection of the battery from over-charging, under-charging, short circuit and reverse polarity, and lastly a DC-DC converter to supply a constant and stable 5 volts to the microcontroller and modem module.
 
-# License
+# Licence
 
 The Scout hardware is licensed under [Creative Commons BY-SA](https://creativecommons.org/licenses/by-sa/4.0/).
 
