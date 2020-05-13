@@ -1,6 +1,6 @@
 # Scout Firmware
 
-[![Build Status](https://dev.azure.com/altangel/Altitude%20Angel/_apis/build/status/AA.Scout?branchName=master)](https://dev.azure.com/altangel/Altitude%20Angel/_build/latest?definitionId=260&branchName=master)
+[![Build Status](https://dev.azure.com/altangel/Altitude%20Angel/_apis/build/status/AA.Scout?branchName=master)](https://dev.azure.com/altangel/Altitude%20Angel/_build/latest?definitionId=261&branchName=master)
 
 ## Before you begin
 
