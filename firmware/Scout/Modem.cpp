@@ -162,7 +162,7 @@ bool Modem::getClock(time_t &time) {
   tm convert;
   long tz;
   if (!getClock(convert, tz)) return false;
-  time = mktime(&convert) - tz;
+  time = mktime(convert) - tz;
   return true;
 }
 
