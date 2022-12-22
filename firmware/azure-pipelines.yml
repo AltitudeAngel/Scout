@@ -27,7 +27,6 @@ steps:
   inputs:
     filePath: '$(Build.SourcesDirectory)/firmware/Build.sh'
     workingDirectory: '$(Build.SourcesDirectory)/firmware'
-    failOnStderr: true
 
 - task: CopyFiles@2
   displayName: 'Copy Build Artifacts'
