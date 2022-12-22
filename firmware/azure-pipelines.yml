@@ -19,6 +19,8 @@ schedules:
 pool:
   vmImage: 'ubuntu-latest'
 
+name: $(BuildID)_$(SourceBranchName)
+
 steps:
 - task: Bash@3
   displayName: 'Run Build Script'
